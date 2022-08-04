@@ -1,0 +1,38 @@
+.sticky {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  margin-top: 20px;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  .header {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: var(--white);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.15);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.15);
+    box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.15);
+    img {
+      padding: 5px;
+      margin-left: 50px;
+      height: 100px;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        padding-left: 35px;
+        font-weight: 600;
+        transition: filter 0.2s;
+        
+        &:hover {
+          filter: brightness(0.7);
+        }
+      }
+    }
+  }
+}
