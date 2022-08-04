@@ -4,7 +4,7 @@ export default function HomeComponent() {
   return (
     <>
       <div className={styles.left}>
-        <h1>Graziela Matana <br/>advocacia contratual</h1>
+        <h1>Graziela Matana <br/>Advocacia contratual</h1>
         <span>OAB/RS 118.362</span>
         <span>Unindo contratos e design para uma advocacia objetiva e eficiente </span>
       </div>
