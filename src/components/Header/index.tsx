@@ -11,7 +11,7 @@ export default function HeaderComponent() {
           <ul>
             <li><a href="#home">Início</a></li>
             <li><a href="#about">Sobre mim</a></li>
-            <li><a href="">Serviços</a></li>
+            <li><a href="#services">Serviços</a></li>
             {/* <li><a href="">Blog</a></li> */}
             <li><a href="">Contato</a></li>
           </ul>
