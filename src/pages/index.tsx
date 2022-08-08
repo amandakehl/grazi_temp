@@ -1,4 +1,5 @@
 import AboutComponent from "../components/AboutComponent";
+import ContactComponent from "../components/ContactComponent";
 import HomeComponent from "../components/HomeComponent";
 import ServicesComponent from "../components/ServicesComponent";
 
@@ -16,8 +17,8 @@ export default function Home() {
       <section id="services" className={styles.services}>
         <ServicesComponent />
       </section>
-      <section id="contact">
-
+      <section id="contact" className={styles.contact}>
+        <ContactComponent />
       </section>
     </>
   )

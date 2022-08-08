@@ -6,6 +6,7 @@
   align-items: flex-start;
   background-color: var(--yellow-100);
   h2 {
+    padding-top: 50px;
     font-size: 50px;
     font-weight: 700;
     color: var(--pink-500);
@@ -27,7 +28,7 @@
 
   .contact {
     font-weight: 600;
-    padding-top: 150px;
+    padding-top: 20px;
     align-self: center;
     .color {
       color: var(--pink-500);

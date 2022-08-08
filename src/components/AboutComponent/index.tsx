@@ -5,8 +5,8 @@ export default function AboutComponent() {
   return (
     <>
       <div className={styles.left}>
-      <div className={styles['second-image']} />
-      </div>
+        <div className={styles['second-image']} />
+        </div>
       <div className={styles.right}>
         <h2>Sobre mim</h2>
         <span><span className={styles.information}>Advogada</span>, <br/>especialista em direito societário pela Fundação Getúlio Vargas</span>
