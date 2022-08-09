@@ -1,0 +1,44 @@
+.newsletter {
+  width: 100%;
+  height: 300px;
+  background: var(--yellow-100);
+  display: flex;
+  align-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    height: 200px;
+    width: 300px;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    input {
+      margin-top: 10px;
+      padding: 8px;
+      border: 1px solid var(--green-500);
+      border-radius: 20px;
+      min-width: 350px;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 8px 40px;
+      background-color: var(--green-500);
+      border: transparent;
+      border-radius: 50px;
+      color: var(--white);
+      font-size: 20px;
+      font-weight: 800;
+  
+      transition: filter 0.2s;
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+  }
+}

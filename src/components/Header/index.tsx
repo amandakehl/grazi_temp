@@ -13,7 +13,7 @@ export default function HeaderComponent() {
             <li><a href="#about">Sobre mim</a></li>
             <li><a href="#services">Serviços</a></li>
             {/* <li><a href="">Blog</a></li> */}
-            <li><a href="">Contato</a></li>
+            <li><a href="#contact">Contato</a></li>
           </ul>
         </div>
       </nav>
