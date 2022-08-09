@@ -1,5 +1,6 @@
 import AboutComponent from "../components/AboutComponent";
 import ContactComponent from "../components/ContactComponent";
+import Footer from "../components/Footer";
 import HomeComponent from "../components/HomeComponent";
 import Newsletter from "../components/Newsletter";
 import ServicesComponent from "../components/ServicesComponent";
@@ -24,6 +25,7 @@ export default function Home() {
       <section id="newsletter" className={styles.newsletter}>
         <Newsletter />
       </section>
+      <Footer />
     </>
   )
 }
