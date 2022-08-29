@@ -9,9 +9,9 @@ export default function ServicesComponent() {
       <div className={styles.grid}>
         <ServiceGridComponent number={1} title="Contratos">
           <span>Elaboração de contratos:<br/></span>
-          <span>- COMPRA E VENDA<br/></span>
-          <span>- LOCAÇÃO<br/></span>
-          <span>- PRESTAÇÃO DE SERVIÇOS</span>
+          <span>• Compra e venda;<br/></span>
+          <span>• Locação;<br/></span>
+          <span>• Prestação de Serviços.</span>
         </ServiceGridComponent>
         <ServiceGridComponent number={2} title="Societário">
           <span>Abertura de empresas;<br/></span>
@@ -23,7 +23,7 @@ export default function ServicesComponent() {
           <span>Elaboração de documentos jurídicos <br/>para escritórios de advocacia.<br/></span>
         </ServiceGridComponent>
       </div>
-      <span className={styles.contact}>Ficou com alguma dúvida? <span className={styles.color}>Entre em contato! :)</span></span>
+      <span className={styles.contact}>Ficou com alguma dúvida? <a className={styles.color} href="https://api.whatsapp.com/send?phone=54991119962">Entre em contato! :)</a></span>
     </div>
   )
 }

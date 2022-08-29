@@ -4,12 +4,12 @@
   background: var(--yellow-100);
   display: flex;
   align-content: space-around;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-
+  
   img {
-    height: 200px;
-    width: 300px;
+    width: 16%;
+    border-radius: 200px 200px;
   }
 
   .information {
@@ -35,10 +35,31 @@
       font-size: 20px;
       font-weight: 800;
   
-      transition: filter 0.2s;
+      transition: 0.2s;
       &:hover {
-        filter: brightness(0.8);
+        background-color: var(--pink-500);
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .newsletter {  
+    img {
+      width: 20%;
+    }
+    .information {
+      width: 50%;
     }
   }
 }
