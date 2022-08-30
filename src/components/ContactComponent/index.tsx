@@ -5,11 +5,11 @@ export default function ContactComponent() {
   return (
     <>
       <div className={styles.left}>
-        <span>sinta-se a vontade para</span>
+        <span>Sinta-se a vontade para</span>
         <h2>entrar em contato</h2>
         <p><a href="https://api.whatsapp.com/send?phone=54991119962">(54) 99111-9962</a></p>
-        <p><a href="mailto:ola@grazielamatanaadvocacia.com.br">ola@grazielamatanaadvocacia.com.br</a></p>
-        <p>www.grazielamatanaadvocacia.com.br</p>
+        <p><a href="mailto:grazielamatana@gmail.com">grazielamatana@gmail.com</a></p>
+        {/* <p>www.grazielamatanaadvocacia.com.br</p> */}
         <div className={styles.buttons}>
           <a href='https://www.instagram.com/grazielamatana/' rel="noreferrer" target='_blank'>
             <AiFillInstagram color='#FFFFFF' />
@@ -21,7 +21,7 @@ export default function ContactComponent() {
         <button><a href="https://api.whatsapp.com/send?phone=54991119962">Me chama!</a></button>
       </div>
       <div className={styles.right}>
-        <img src='/contact.png' alt="logo" />
+        <img src='/contact.png' alt="Logo Graziela Matana advocacia contratual" />
       </div>
     </>
   )

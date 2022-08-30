@@ -57,9 +57,10 @@
     font-size: 20px;
     font-weight: 800;
 
-    transition: filter 0.2s;
+    transition: 0.2s;
     &:hover {
-      filter: brightness(0.8);
+      background-color: var(--pink-500);
+      color: var(--white);
     }
   }
 }
@@ -73,5 +74,49 @@
   img {
     height: 400px;
     width: 400px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .left {
+    h2 {
+      font-size: 40px;
+    }
+  
+    span {
+      font-size: 20px;
+      margin-bottom: -10px;
+    }
+  }
+
+  .right {
+    img {
+      height: 300px;
+      width: 300px;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .right {
+    img {
+      width: 30%;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .left {  
+    padding-top: 150px;
+  }
+
+  .right {
+    width: 50%;
+    padding: 0 45px 25px 0;
+
+    img {
+      height: 200px;
+      width: 200px;
+    }
   }
 }

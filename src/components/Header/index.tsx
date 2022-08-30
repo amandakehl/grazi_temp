@@ -6,7 +6,7 @@ export default function HeaderComponent() {
       <nav className={styles.sticky}>
         <div className={styles.header}>
           <a href="">
-            <img src='./logo1.JPG' alt='logo' />
+            <img src='./logo1.JPG' alt='Símbolo Graziela Matana' />
           </a>
           <ul>
             <li><a href="#home">Início</a></li>
