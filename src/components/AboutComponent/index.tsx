@@ -4,6 +4,7 @@ import { AiFillInstagram, AiFillLinkedin } from 'react-icons/ai'
 export default function AboutComponent() {
   return (
     <>
+    <div className={styles.aboutContent}>
       <div className={styles.left}>
         <div className={styles['second-image']} />
         </div>
@@ -21,6 +22,7 @@ export default function AboutComponent() {
           </a>
         </div>
       </div>
+    </div>
     </>
   )
 }

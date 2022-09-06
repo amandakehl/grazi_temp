@@ -24,7 +24,6 @@ export default function Footer() {
             <p><a>Termos de Uso</a></p>
             <p><a>Política de Privacidade</a></p>
           </div>
-      <p className={styles.rights}>Todos os direitos reservados Graziela Matana © 2022</p>
         </div>
         <div className={styles.contact}>
           <span>sinta-se a vontade para</span>
@@ -34,6 +33,7 @@ export default function Footer() {
           <button><a href="https://api.whatsapp.com/send?phone=54991119962">Me chama!</a></button>
         </div>
       </div>
+      <p className={styles.rights}>Todos os direitos reservados Graziela Matana © 2022</p>
     </footer>
   )
 }

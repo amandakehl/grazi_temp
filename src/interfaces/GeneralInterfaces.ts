@@ -1,5 +1,4 @@
 interface ServiceGrid {
-  number: number;
   title: string;
   children: any;
 }
