@@ -12,7 +12,15 @@ export default function Home() {
   return (
     <>
     <Head>
-      <title>Graziela Matana • Advocacia Contratual</title>
+      <title>Graziela Matana | Advocacia Contratual</title>
+      <meta name="description" content="Unindo contratos e design para uma advocacia objetiva e eficiente." />
+      <meta name="og:locale" property="og:locale" content="pt_BR" />
+      <meta property="og:type" content="website" />
+      <meta name="og:title" property="og:title" content="Graziela Matana | Advocacia Contratual" />
+      <meta name="og:url" property="og:url" content="https://grazielamatanaadvocacia.com.br/" />
+      <meta name="og:site_name" property="og:site_name" content="Graziela Matana Advocacia" />
+      <meta name="og:image" property="og:image" content="./favicon.png" />
+      <link rel="shortcut icon" href="./favicon.png" />
     </Head>
     <div className={styles.scroll}>
       <section id="home" className={styles.home}>

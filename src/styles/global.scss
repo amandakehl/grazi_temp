@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+// *::-webkit-scrollbar {
+//   width: 12px;
+// }
+
+// *::-webkit-scrollbar-track {
+//   background:  #CC6F84;
+// }
+
+// *::-webkit-scrollbar-thumb {
+//   background-color: #965060;
+//   border-radius: 20px;
+//   border: 3px transparent;
+// }
+
 html {
   scroll-behavior: smooth;
 }
