@@ -1,5 +1,8 @@
 .blog {
   padding: 120px 0;
+  @media(max-width:950px) {
+    padding: 150px 20px;
+  }
   h1 {
     padding: 20px 0;
     font-size: 50px;
@@ -11,6 +14,37 @@
     gap: 30px;
     li {
       list-style: none
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .blog {
+    h1 {
+      padding: 20px 0;
+      font-size: 40px;
+      color: var(--pink-500);
+    }
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      li {
+        list-style: none
+      }
+    }
+  }
+}
+
+
+@media (max-width: 750px) {
+  .blog {
+    ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      li {
+        list-style: none
+      }
     }
   }
 }

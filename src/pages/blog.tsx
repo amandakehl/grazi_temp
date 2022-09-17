@@ -2,19 +2,10 @@ import { createClient } from '@prismicio/client'
 import { useEffect } from 'react';
 import Footer from '../components/Footer';
 import PostPreview from '../components/PostPreview';
-import useLoaderStore from '../hooks/hooks';
 import { PrimicBlogPost, Prismic } from '../interfaces/GeneralInterfaces'
 import styles from './blog.module.scss';
 
 export default function Blog({ posts }: Prismic) {
-  const endLoading = useLoaderStore((state) => state.endLoading)
-  
-  useEffect(() => {
-    if(posts) {
-      endLoading();
-    }
-  }, [posts]);
-  
   return (
     <>
       <div className="container">

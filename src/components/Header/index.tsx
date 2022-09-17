@@ -1,14 +1,18 @@
 import styles from './styles.module.scss'
 import Link from 'next/link'
-import useLoaderStore from '../../hooks/hooks'
+import { useState } from 'react';
 
 export default function HeaderComponent() {
-  const startLoading = useLoaderStore((state) => state.startLoading)
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
-  const handleClick = (e) => {
-    e.preventDefault()
-    startLoading();
-  };
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  }
+
+  const handleMenu = () => {
+    console.log('asdadasdasd')
+    setIsMenuOpen(!isMenuOpen);
+  }
 
   return (
     <>
@@ -17,17 +21,36 @@ export default function HeaderComponent() {
           <Link href="/#home">
             <img src='./favicon.png' alt='Símbolo Graziela Matana' />
           </Link>
-          <ul>
-            <li><Link href="/#home">Início</Link></li>
-            <li><Link href="/#about">Sobre mim</Link></li>
-            <li><Link href="/#services">Serviços</Link></li>
-            <li onClick={(e) => handleClick(e)} >
-              <Link href="/blog">
-                Blog
+          <ul className={`menu ${isMenuOpen ? styles.active : ''}`}>
+            <li>
+              <Link href="/#home">
+                <a onClick={closeMenu}>Início</a>
               </Link>
             </li>
-            <li><Link href="/#contact">Contato</Link></li>
+            <li>
+              <Link href="/#about">
+                <a onClick={closeMenu}>Sobre mim</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/#services">
+                <a onClick={closeMenu}>Serviços</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog">
+                <a onClick={closeMenu}>Blog</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/#contact">
+                <a onClick={closeMenu}>Contato</a>
+              </Link>
+            </li>
           </ul>
+          <div className={styles.btn_menu} onClick={handleMenu}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" /></svg>
+          </div>
         </div>
       </nav>
     </>

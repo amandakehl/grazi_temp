@@ -5,18 +5,8 @@ import styles from './post.module.scss';
 import CoverImage from '../../components/ConverImage';
 import Footer from '../../components/Footer';
 import Head from 'next/head';
-import useLoaderStore from '../../hooks/hooks';
-import { useEffect } from 'react';
 
 export default function Post({ post }: PrismicBlogSinglePost) {
-  const endLoading = useLoaderStore((state) => state.endLoading)
-  
-  useEffect(() => {
-    if(post) {
-      endLoading();
-    }
-  });
-  
   return (
     <>
       <Head>

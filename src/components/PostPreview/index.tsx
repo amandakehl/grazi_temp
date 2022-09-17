@@ -3,16 +3,8 @@ import CoverImage from '../ConverImage'
 import styles from './styles.module.scss'
 import Link from 'next/link'
 import * as prismicH from '@prismicio/helpers'
-import useLoaderStore from '../../hooks/hooks'
 
 export default function PostPreview({ title, slug, coverimage, date, covercontent }: PostPreviewData) {
-  const startLoading = useLoaderStore((state) => state.startLoading)
-
-  const handleClick = (e) => {
-    e.preventDefault()
-    startLoading();
-  };
-  
   return (
     <div className={styles.postPreview}>
       <div className={styles.top_content}>
@@ -21,7 +13,7 @@ export default function PostPreview({ title, slug, coverimage, date, coverconten
           slug={slug}
           field={coverimage}
         />
-        <h3 onClick={(e) => handleClick(e)}>
+        <h3>
           <Link href={`/blog/${slug}`}>
             {title}
           </Link>
