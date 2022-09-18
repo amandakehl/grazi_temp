@@ -115,12 +115,12 @@
         }
 
         .buttons {
-          display: flex;
+          display: none;
         }
       }
 
       .menus {
-        padding-left: 100px;
+        // padding-left: 100px;
         .links {
           display: flex;
           align-items: flex-start;
@@ -134,3 +134,29 @@
     }
   }
 }
+
+@media only screen and (max-width: 540px) {
+  .footer {
+    width: 100%;
+    margin-top: 15%;
+    height: 50%;
+
+    .principal {
+      .social {
+        padding-left: 50px;
+      }
+
+      .contact {
+        padding-right: 50px;
+      }
+    }
+
+    .rights {
+      padding: 25px 50px;
+    }
+  }
+}
+
+// @media only screen and (max-width: 393px) {
+
+// }

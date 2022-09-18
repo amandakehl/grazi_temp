@@ -10,7 +10,6 @@ export default function HeaderComponent() {
   }
 
   const handleMenu = () => {
-    console.log('asdadasdasd')
     setIsMenuOpen(!isMenuOpen);
   }
 

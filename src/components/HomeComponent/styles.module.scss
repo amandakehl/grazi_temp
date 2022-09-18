@@ -74,6 +74,7 @@
   .homeContent {
     display: flex;
     flex-direction: column;
+    padding-top: 10%;
 
     .left {
       width: 100%;
@@ -91,6 +92,30 @@
 
       .first-image {
         background: url("/home_mobile.jpg") top center/cover;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .homeContent {
+    width: 100%;
+    
+    .left {
+      padding-left: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 393px) {
+  .homeContent {    
+    .left {
+      h1 {
+        font-size: 25px;
+      }
+
+      span {
+        font-size: 16px;
       }
     }
   }

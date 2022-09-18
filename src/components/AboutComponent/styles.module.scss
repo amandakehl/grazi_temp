@@ -119,3 +119,30 @@
     }
   }
 }
+
+@media only screen and (max-width: 540px) {
+  .aboutContent {
+    .right {
+      width: 110%;
+      padding-left: 50px;
+
+      h2 {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 393px) {
+  .aboutContent {
+    .right {
+      width: 118%;
+      h2 {
+        font-size: 25px;
+      }
+      span.information {
+        font-size: 20px;
+      }
+    }
+  }
+}
