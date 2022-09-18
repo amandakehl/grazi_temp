@@ -99,37 +99,38 @@
   }
 }
 
-@media only screen and (max-width: 1440px) {
-  .footer {
-    .rights {
-      padding-left: 30%;
-    }
-  }
-}
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 980px) {
   .footer {
-    .social {
-      span {
-        display: none;
-      }
-    }
-
-    .menus {
-      display: none;
-  
-      .rights {
+    .principal {
+      .social {
         display: flex;
-      }
-    }
+        flex-direction: column;
+        img {
+          display: none;
+        }
 
-    .contact {
-      display: flex;
-      flex-direction: column;      
-      align-items: flex-end;
-      h4 {
-        font-size: 20px;
+        span {
+          display: none;
+        }
+
+        .buttons {
+          display: flex;
+        }
       }
+
+      .menus {
+        padding-left: 100px;
+        .links {
+          display: flex;
+          align-items: flex-start;
+        }
+      }
+      
+    }
+    .rights {
+      padding-left: 100px;
+      text-align: left;
     }
   }
 }
