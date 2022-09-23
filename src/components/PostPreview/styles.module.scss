@@ -15,6 +15,9 @@
   .top_content {
     display: flex;
     flex-direction: column;
+    img {
+      border-radius: 20px;
+    }
   }
 
   .bottom_content {
