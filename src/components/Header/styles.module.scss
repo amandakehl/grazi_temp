@@ -24,6 +24,7 @@
       height: 80px;
       display: flex;
       align-content: center;
+      cursor: pointer;
     }
 
     ul {
@@ -120,7 +121,7 @@
 @media only screen and (max-width: 540px) {
   .sticky {
     .header {
-      height: 7%;
+      height: 8%;
 
       img {
         width: 40px;
@@ -134,7 +135,7 @@
 @media only screen and (max-width: 414px) {
   .sticky {
     .header {
-      height: 7%;
+      height: 8%;
 
       img {
         width: 40px;
