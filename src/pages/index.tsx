@@ -35,9 +35,10 @@ export default function Home() {
         <section id="contact" className={styles.contact}>
           <ContactComponent />
         </section>
+        {/* o site não terá mais newsletter, no futuro vai ser um "baixe o ebook" num formato parecido
         <section id="newsletter" className={styles.newsletter}>
           <Newsletter />
-        </section>
+        </section> */}
         <Footer />
       </div>
     </>

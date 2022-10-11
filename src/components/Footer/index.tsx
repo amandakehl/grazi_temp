@@ -1,5 +1,6 @@
 import styles from './styles.module.scss'
 import { AiFillInstagram, AiFillLinkedin } from 'react-icons/ai'
+import Link from 'next/link'
 
 export default function Footer() {
   return (
@@ -21,8 +22,8 @@ export default function Footer() {
           <div className={styles.links}>
             <p><a href='blog'>Blog</a></p>
             <p><a href='#contact'>Contato</a></p>
-            <p><a href='legal/termos-de-uso'>Termos de Uso</a></p>
-            <p><a href='legal/politica-de-privacidade'>Política de Privacidade</a></p>
+            <p><Link href='/legal/termos-de-uso'>Termos de Uso</Link></p>
+            <p><Link href='/legal/politica-de-privacidade'>Política de Privacidade</Link></p>
           </div>
         </div>
         <div className={styles.contact}>
