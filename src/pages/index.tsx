@@ -21,6 +21,7 @@ export default function Home() {
         <meta name="og:site_name" property="og:site_name" content="Graziela Matana Advocacia" />
         <meta name="og:image" property="og:image" content="./favicon.png" />
         <link rel="shortcut icon" href="./favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className={styles.scroll}>
         <section id="home" className={styles.home}>

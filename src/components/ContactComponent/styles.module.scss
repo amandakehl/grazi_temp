@@ -153,6 +153,10 @@
       p {
         font-size: 22px;
       }
+
+      button {
+        width: 50%;
+      }
     }
     
     .right {
@@ -161,6 +165,42 @@
       button {
         background-color: var(--pink-500);
         margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .both {
+    .left {  
+      padding-top: 50px;
+      h2 {
+        font-size: 28px;
+      }
+
+      span {
+        font-size: 17px;
+      }
+
+      p {
+        font-size: 17px;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+    
+    .right {  
+      display: flex;
+      justify-content: center;
+      .form {
+        input {
+          width: 400px;
+        }
+        button {
+          background-color: var(--pink-500);
+        }
       }
     }
   }
@@ -191,41 +231,7 @@
   }
 }
 
-@media only screen and (max-width: 820px) {
-  .both {
-    .left {  
-      padding: 50px 90px;
-      padding-top: 100px;
-      h2 {
-        font-size: 28px;
-      }
-
-      span {
-        font-size: 17px;
-      }
-
-      p {
-        font-size: 17px;
-      }
-    }
-    
-    .right {  
-      display: flex;
-      justify-content: flex-start;
-      padding-left: 80px;
-      .form {
-        input {
-          width: 400px;
-        }
-        button {
-          background-color: var(--pink-500);
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 460px) {
   .both {
     .left {  
       padding: 50px;
@@ -244,12 +250,55 @@
     }
     
     .right {  
-      padding-left: 40px;
       .form {
         input {
           width: 290px;
         }
         button {
+          background-color: var(--pink-500);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 370px) {
+.both {
+  .left { 
+    padding-top: 50px; 
+    h2 {
+      padding-top: 6px;
+      font-size: 22px;
+    }
+
+    span {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    button {
+      font-size: 14px;
+    }
+  }
+}
+}
+
+@media only screen and (max-width: 340px) {
+  .both {    
+    .right {  
+      .form {
+        label {
+          font-size: 16px;
+        }
+
+        input {
+          width: 240px;
+        }
+        button {
+          font-size: 16px;
           background-color: var(--pink-500);
         }
       }

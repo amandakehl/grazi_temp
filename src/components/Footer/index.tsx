@@ -20,8 +20,8 @@ export default function Footer() {
         </div>
         <div className={styles.menus}>
           <div className={styles.links}>
-            <p><a href='blog'>Blog</a></p>
-            <p><a href='#contact'>Contato</a></p>
+            <p><Link href='blog'>Blog</Link></p>
+            <p><Link href='/#contact'>Contato</Link></p>
             <p><Link href='/legal/termos-de-uso'>Termos de Uso</Link></p>
             <p><Link href='/legal/politica-de-privacidade'>Política de Privacidade</Link></p>
           </div>
